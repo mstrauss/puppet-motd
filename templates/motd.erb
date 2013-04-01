@@ -1,0 +1,7 @@
+This is <%= scope.lookupvar('::fqdn')%>, managed by Puppet.  Resistance is futile.
+---
+OS: <%= scope.lookupvar('::lsbdistdescription') %> <%= scope.lookupvar('::architecture') %>.
+Puppet: <%= scope.lookupvar('::puppetversion') %>, Facter: <%= scope.lookupvar('::facterversion') %>, Ruby: <%= scope.lookupvar('::rubyversion') %>
+CPUs: <%= scope.lookupvar('::processorcount') %>, Memory: <%= scope.lookupvar('::memorysize') %>.  Swap: <%= scope.lookupvar('::swapsize') %>.
+---
+Puppet modules on this server:
